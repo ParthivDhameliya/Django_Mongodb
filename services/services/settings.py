@@ -96,9 +96,9 @@ DATABASES = {
             'ENGINE': 'djongo',
             'NAME': 'services',
             'CLIENT': {
-                'host': 'mongodb+srv://Parthiv:Dparthiv8548@cluster0.7skev.mongodb.net/?retryWrites=true&w=majority',
-                'username': 'Parthiv',
-                'password': 'Dparthiv8548'
+                'host': os.getenv('DB_CONNECTION'),
+                'username': os.getenv('DB_USERNAME'),
+                'password': os.getenv('DB_PASSWORD'),
             }  
         }
 }
