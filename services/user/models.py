@@ -10,6 +10,7 @@ class userModel(models.Model):
     city = models.CharField(max_length=50)
     country = models.CharField(max_length=50)
     zipcode = models.CharField(max_length=20)
+    password = models.CharField(max_length=20, default=' ', blank=False)
 
     def __str__(self):
         return self.firstName+' '+self.lastName

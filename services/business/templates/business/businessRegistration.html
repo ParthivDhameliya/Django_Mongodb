@@ -1,0 +1,9 @@
+{% extends 'business/base.html' %}
+{% block title %}Registration{% endblock title %}
+{% block content %}
+    <form action="{% url 'businesshome' %}" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Submit</button>
+    </form>
+{% endblock content %}

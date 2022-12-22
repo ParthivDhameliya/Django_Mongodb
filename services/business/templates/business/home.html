@@ -1,0 +1,7 @@
+{% extends 'business/base.html' %}
+{% block title %}Home{% endblock title %}
+{% block content %}
+    <h1>Business Home Page</h1>
+    <a href="{% url 'businessPR' %}">Register</a><br><br>
+    <a href="{% url 'businessLogin' %}">Login</a>
+{% endblock content %}

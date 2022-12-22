@@ -1,0 +1,7 @@
+{% extends 'user/base.html' %}
+{% block title %}Home{% endblock title %}
+{% block content %}
+    <h1>user home</h1>
+    <a href="{% url 'userLogin' %}">login</a><br><br>
+    <a href="{% url 'userRegistration' %}">registration</a>
+{% endblock content %}
