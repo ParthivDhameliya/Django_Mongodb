@@ -1,7 +1,7 @@
 {% extends 'business/base.html' %}
 {% block title %}Login{% endblock title %}
 {% block content %}
-    <form action="{% url 'businesshome' %}" method="post">
+    <form action="" method="post">
         {% csrf_token %}
         {{form.as_p}}
         <button type="submit">Submit</button>

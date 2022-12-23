@@ -1,7 +1,7 @@
 {% extends 'user/base.html' %}
 {% block title %}Registration{% endblock title %}
 {% block content %}
-    <form action="{% url 'userhome' %}" method="post">
+    <form action="" method="post" novalidate>
         {% csrf_token %}
         {{form.as_p}}
         <button type="submit">Submit</button>

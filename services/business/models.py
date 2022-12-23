@@ -9,6 +9,7 @@ class businessModel(models.Model):
     mobile = models.BigIntegerField()
     password = models.CharField(max_length=20)
     businessName = models.CharField(max_length=70)
+    businessWebsite = models.URLField(max_length=200, default='')
     businessLocation = models.CharField(max_length=100)
     businessCategory = models.CharField(max_length=70)
     businessDescription = models.CharField(max_length=200, blank = True, default="N/A")
